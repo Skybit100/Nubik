@@ -2,57 +2,111 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nubik</title>
-  <link href="styles.css" rel="stylesheet">
-  <script defer src="script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NUBIK | Create the Future</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0e2239;
+      color: white;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #0e2239;
+      text-align: center;
+      padding: 1rem;
+      animation: fadeIn 1.5s ease-in;
+    }
+    header img {
+      width: 140px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+    nav {
+      background-color: #172c45;
+      padding: 0.7rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    nav a:hover {
+      color: #ff4c4c;
+    }
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: 0 auto;
+      animation: slideUp 1s ease;
+    }
+    h2 {
+      color: #ff4c4c;
+    }
+    .impacto {
+      background-color: #13273e;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #0e2239;
+      font-size: 0.8rem;
+      color: #bbb;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-  <header class="animated fadeInDown">
-    <img src="logo.png" alt="Nubik Logo" class="logo">
-    <nav>
-      <ul class="menu">
-        <li><a href="#quienes">¿Quiénes somos?</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#impacto">Impacto</a></li>
-        <li><a href="#contacto">Contáctanos</a></li>
-      </ul>
-    </nav>
+  <header>
+    <img src="assets/logo.png" alt="Logo Nubik">
   </header>
+  <nav>
+    <a href="#quienes">Quiénes somos</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#impacto">Impacto</a>
+    <a href="#contacto">Contáctanos</a>
+  </nav>
 
-  <section id="quienes" class="animated fadeIn">
-    <h2>¿Quiénes somos?</h2>
-    <p>En Nubik somos expertos en sistemas financieros, especializados en resolver desafíos complejos en entornos bancarios digitales. Si pudimos construir un banco digital, ¿qué no podemos hacer por ti?</p>
+  <section id="quienes">
+    <h2>Quiénes somos</h2>
+    <p>Somos expertos en sistemas financieros, especializados en resolver desafíos complejos con soluciones tecnológicas innovadoras. Si pudimos construir un banco digital, ¿qué no podemos hacer por tu negocio?</p>
   </section>
 
-  <section id="servicios" class="animated fadeIn">
+  <section id="servicios">
     <h2>Servicios</h2>
     <ul>
-      <li><strong>Monitoreo con Datadog:</strong> Observabilidad total, trazabilidad y alertamiento en tiempo real.</li>
-      <li><strong>Megaport:</strong> Conectividad ágil y segura hacia múltiples nubes y servicios críticos.</li>
-      <li><strong>Servicios profesionales en Azure:</strong> Implementación, optimización y seguridad en la nube.</li>
-      <li><strong>DevOps:</strong> Automatización, CI/CD y gestión de infraestructura como código.</li>
+      <li>Observabilidad avanzada con Datadog</li>
+      <li>Conectividad global con Megaport</li>
+      <li>Automatización con DevOps</li>
+      <li>Consultoría especializada en Azure y SaaS</li>
     </ul>
   </section>
 
-  <section id="impacto" class="animated fadeIn">
+  <section id="impacto" class="impacto">
     <h2>Impacto</h2>
-    <p>Las empresas que adoptan soluciones cloud y SaaS con Nubik:</p>
-    <ul>
-      <li>Reducción de costos operativos hasta un 40%</li>
-      <li>Mayor disponibilidad y respuesta ante incidentes</li>
-      <li>Implementaciones seguras y rápidas en ambientes regulados</li>
-    </ul>
+    <p>Nuestras soluciones cloud han ayudado a empresas de todos los sectores a reducir costos, aumentar la eficiencia y garantizar la continuidad operativa.</p>
   </section>
 
-  <section id="contacto" class="animated fadeIn">
+  <section id="contacto">
     <h2>Contáctanos</h2>
-    <p>Envíanos un correo a <a href="mailto:contacto@nubik.mx">contacto@nubik.mx</a> o visita nuestras redes sociales para más información.</p>
+    <p>Escríbenos a <strong>contacto@nubik.mx</strong> para más información o para agendar una consultoría.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Nubik. Todos los derechos reservados.</p>
+    &copy; 2025 Nubik. Todos los derechos reservados.
   </footer>
 </body>
 </html>
