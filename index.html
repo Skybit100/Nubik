@@ -1,112 +1,54 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>NUBIK | Create the Future</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0e2239;
-      color: white;
-      scroll-behavior: smooth;
-    }
-    header {
-      background-color: #0e2239;
-      text-align: center;
-      padding: 1rem;
-      animation: fadeIn 1.5s ease-in;
-    }
-    header img {
-      width: 140px;
-      height: auto;
-      display: block;
-      margin: 0 auto 10px auto;
-    }
-    nav {
-      background-color: #172c45;
-      padding: 0.7rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
-    }
-    nav a:hover {
-      color: #ff4c4c;
-    }
-    section {
-      padding: 3rem 1.5rem;
-      max-width: 900px;
-      margin: 0 auto;
-      animation: slideUp 1s ease;
-    }
-    h2 {
-      color: #ff4c4c;
-    }
-    .impacto {
-      background-color: #13273e;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background-color: #0e2239;
-      font-size: 0.8rem;
-      color: #bbb;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from { transform: translateY(40px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="assets/logo.png" alt="Logo Nubik">
+    <img src="logo.png" alt="Logo Nubik" class="logo">
+    <nav>
+      <ul class="menu">
+        <li><a href="#quienes-somos">Quiénes somos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#impacto">Impacto</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+      </ul>
+    </nav>
   </header>
-  <nav>
-    <a href="#quienes">Quiénes somos</a>
-    <a href="#servicios">Servicios</a>
-    <a href="#impacto">Impacto</a>
-    <a href="#contacto">Contáctanos</a>
-  </nav>
 
-  <section id="quienes">
-    <h2>Quiénes somos</h2>
-    <p>Somos expertos en sistemas financieros, especializados en resolver desafíos complejos con soluciones tecnológicas innovadoras. Si pudimos construir un banco digital, ¿qué no podemos hacer por tu negocio?</p>
-  </section>
+  <main>
+    <section id="quienes-somos">
+      <h2>Quiénes somos</h2>
+      <p>
+        Somos expertos en sistemas financieros, especializados en resolver desafíos complejos con soluciones tecnológicas innovadoras. Si pudimos construir un banco digital, ¿qué no podemos hacer por tu negocio?
+      </p>
+    </section>
 
-  <section id="servicios">
-    <h2>Servicios</h2>
-    <ul>
-      <li>Observabilidad avanzada con Datadog</li>
-      <li>Conectividad global con Megaport</li>
-      <li>Automatización con DevOps</li>
-      <li>Consultoría especializada en Azure y SaaS</li>
-    </ul>
-  </section>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <ul>
+        <li>Observabilidad avanzada con Datadog</li>
+        <li>Conectividad global con Megaport</li>
+        <li>Automatización con DevOps</li>
+        <li>Consultoría especializada en Azure y SaaS</li>
+      </ul>
+    </section>
 
-  <section id="impacto" class="impacto">
-    <h2>Impacto</h2>
-    <p>Nuestras soluciones cloud han ayudado a empresas de todos los sectores a reducir costos, aumentar la eficiencia y garantizar la continuidad operativa.</p>
-  </section>
+    <section id="impacto">
+      <h2>Impacto</h2>
+      <p>
+        Nuestras soluciones cloud han ayudado a empresas de todos los sectores a reducir costos, aumentar la eficiencia y garantizar la continuidad operativa.
+      </p>
+    </section>
 
-  <section id="contacto">
-    <h2>Contáctanos</h2>
-    <p>Escríbenos a <strong>contacto@nubik.mx</strong> para más información o para agendar una consultoría.</p>
-  </section>
-
-  <footer>
-    &copy; 2025 Nubik. Todos los derechos reservados.
-  </footer>
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>Escríbenos a <a href="mailto:contacto@nubik.mx">contacto@nubik.mx</a> para más información o para agendar una consultoría.</p>
+    </section>
+  </main>
 </body>
 </html>
