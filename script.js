@@ -1,0 +1,1 @@
+// Animaciones o futuras interacciones JS pueden ir aquí.
