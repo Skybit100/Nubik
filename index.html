@@ -2,53 +2,80 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NUBIK | Create the Future</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nubik ofrece consultoría tecnológica financiera, observabilidad, conectividad y DevOps para acelerar tu negocio." />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <title>NUBIK | Consultoría Tech Financiera</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo Nubik" class="logo">
-    <nav>
-      <ul class="menu">
-        <li><a href="#quienes-somos">Quiénes somos</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#impacto">Impacto</a></li>
-        <li><a href="#contacto">Contáctanos</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <main>
-    <section id="quienes-somos">
-      <h2>Quiénes somos</h2>
-      <p>
-        Somos expertos en sistemas financieros, especializados en resolver desafíos complejos con soluciones tecnológicas innovadoras. Si pudimos construir un banco digital, ¿qué no podemos hacer por tu negocio?
-      </p>
-    </section>
+<nav>
+  <a href="#quienes">Quiénes Somos</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#impacto">Impacto</a>
+  <a href="#contacto">Contáctanos</a>
+</nav>
 
-    <section id="servicios">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Observabilidad avanzada con Datadog</li>
-        <li>Conectividad global con Megaport</li>
-        <li>Automatización con DevOps</li>
-        <li>Consultoría especializada en Azure y SaaS</li>
-      </ul>
-    </section>
+<header>
+  <img src="logo.png" alt="Logo de Nubik" />
+  <h1>NUBIK</h1>
+  <p>Soluciones Tech para la Nueva Banca</p>
+</header>
 
-    <section id="impacto">
-      <h2>Impacto</h2>
-      <p>
-        Nuestras soluciones cloud han ayudado a empresas de todos los sectores a reducir costos, aumentar la eficiencia y garantizar la continuidad operativa.
-      </p>
-    </section>
+<section id="quienes">
+  <h2>Quiénes Somos</h2>
+  <p>Somos especialistas en banca digital y cumplimiento normativo con más de diez años de experiencia. Nuestro equipo ayuda a simplificar procesos, reducir riesgos y acelerar la transformación digital de las organizaciones financieras.</p>
+</section>
 
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>Escríbenos a <a href="mailto:contacto@nubik.mx">contacto@nubik.mx</a> para más información o para agendar una consultoría.</p>
-    </section>
-  </main>
+<section id="servicios">
+  <h2>Servicios Especializados</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>🔍 Monitoreo con Datadog</h3>
+      <p>Observabilidad total con paneles y alertas en tiempo real.</p>
+    </div>
+    <div class="card">
+      <h3>🌐 Conectividad Megaport</h3>
+      <p>Interconexión segura entre nubes y centros de datos con baja latencia.</p>
+    </div>
+    <div class="card">
+      <h3>☁️ Azure Profesional</h3>
+      <p>Migraciones y arquitecturas escalables bajo las mejores prácticas de seguridad.</p>
+    </div>
+    <div class="card">
+      <h3>⚙️ DevOps para Finanzas</h3>
+      <p>Automatización de despliegues, infraestructura como código y cumplimiento continuo.</p>
+    </div>
+  </div>
+</section>
+
+<section id="impacto">
+  <h2>Impacto Comprobado</h2>
+  <div class="impact">
+    <div><h3>+10 años</h3>líderes en tecnología financiera</div>
+    <div><h3>99.99%</h3>uptime en servicios críticos</div>
+    <div><h3>100%</h3>cumplimiento normativo en proyectos</div>
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <form action="https://formsubmit.co/contacto@nubik.mx" method="POST">
+    <label for="nombre">Nombre</label>
+    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+    <label for="correo">Correo electrónico</label>
+    <input id="correo" name="correo" type="email" placeholder="tu@correo.com" required />
+    <label for="mensaje">Mensaje</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+    <button type="submit">Enviar Mensaje</button>
+  </form>
+</section>
+
+<footer>
+  &copy; 2025 <a href="https://nubik.mx" style="color:inherit;text-decoration:none;">Nubik.mx</a> — Consultoría Estratégica en Tecnología Financiera
+</footer>
+
+<script src="script.js" defer></script>
 </body>
 </html>
