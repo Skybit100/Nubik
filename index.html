@@ -3,95 +3,69 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NUBIK impulsa la transformación digital de bancos y fintechs con soluciones que combinan innovación, seguridad y cercanía humana." />
-  <title>NUBIK – Revoluciona tu Banca con Tecnología Humana</title>
+  <meta name="description" content="NUBIK - Soluciones Tech para la Nueva Banca" />
+  <title>NUBIK – Innovación Financiera</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header id="header" class="transparent">
-    <div class="container">
-      <img src="logo.png" alt="Logo Nubik" class="logo">
-      <nav>
-        <ul>
-          <li><a href="#hero">Inicio</a></li>
-          <li><a href="#quienes-somos">Quiénes Somos</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#impacto">Impacto</a></li>
-          <li><a href="#contacto">Contáctanos</a></li>
-        </ul>
-      </nav>
+  <aside class="sidebar">
+    <div class="logo">
+      <img src="logo.png" alt="Logo Nubik" />
     </div>
-  </header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#quienes-somos">Quiénes Somos</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#impacto">Impacto</a></li>
+        <li><a href="#contacto">Contáctanos</a></li>
+      </ul>
+    </nav>
+  </aside>
 
-  <section id="hero">
-    <video class="bg-video" autoplay muted loop>
-      <source src="assets/clouds.mp4" type="video/mp4" />
-    </video>
-    <div class="overlay"></div>
-    <div class="hero-content">
+  <main class="main-content">
+    <section id="inicio" class="hero">
       <h1>Impulsamos el Latido Digital de tu Banca</h1>
       <p>Donde la innovación y la seguridad se encuentran para crear experiencias inolvidables.</p>
-      <a href="#contacto" class="btn btn-primary pulse">¡Hablemos!</a>
-    </div>
-  </section>
+      <a href="#contacto" class="btn">¡Hablemos!</a>
+    </section>
 
-  <section id="quienes-somos" class="fade-in-section">
-    <div class="container">
+    <section id="quienes-somos">
       <h2>Quiénes Somos</h2>
-      <p>NUBIK nació de un sueño: unir tecnología y finanzas para mejorar la vida de millones de personas. Hoy, creamos soluciones que combinan pasión y seguridad, con la visión de un mañana más conectado.</p>
-    </div>
-  </section>
+      <p>En NUBIK ayudamos a bancos y fintechs a acelerar su transformación tecnológica con soluciones seguras, escalables y humanas.</p>
+    </section>
 
-  <section id="servicios" class="fade-in-section">
-    <div class="container">
+    <section id="servicios">
       <h2>Servicios</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>⚙️ DevOps Multicloud</h3>
-          <p>Automatizamos tu infraestructura sin fronteras.</p>
-        </div>
-        <div class="card">
-          <h3>📊 Observabilidad</h3>
-          <p>Datos en tiempo real para decisiones inteligentes.</p>
-        </div>
-        <div class="card">
-          <h3>🔐 Seguridad</h3>
-          <p>Protección y cumplimiento normativo garantizados.</p>
-        </div>
-        <div class="card">
-          <h3>☁️ Modernización</h3>
-          <p>Transforma tus sistemas a la nube con confianza.</p>
-        </div>
+      <div class="grid">
+        <div class="card"><h3>⚙️ DevOps</h3><p>Automatización y despliegue multicloud.</p></div>
+        <div class="card"><h3>📊 Observabilidad</h3><p>Monitoreo y métricas accionables.</p></div>
+        <div class="card"><h3>🔐 Seguridad</h3><p>Cumplimiento normativo y protección avanzada.</p></div>
+        <div class="card"><h3>☁️ Modernización</h3><p>Arquitectura cloud escalable.</p></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="impacto" class="fade-in-section">
-    <div class="container">
+    <section id="impacto">
       <h2>Impacto</h2>
       <div class="kpis">
-        <div class="kpi"><span>+120</span> aplicaciones desplegadas</div>
-        <div class="kpi"><span>99.9%</span> uptime garantizado</div>
-        <div class="kpi"><span>5</span> países con presencia</div>
+        <div><span>+120</span><p>apps desplegadas</p></div>
+        <div><span>99.9%</span><p>uptime garantizado</p></div>
+        <div><span>5</span><p>países con presencia</p></div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contacto" class="fade-in-section">
-    <div class="container">
+    <section id="contacto">
       <h2>Contáctanos</h2>
       <form action="https://formspree.io/f/moqzvvke" method="POST">
         <input type="email" name="email" placeholder="Tu correo" required />
         <textarea name="mensaje" placeholder="Tu mensaje" required></textarea>
-        <button type="submit" class="btn btn-secondary">Enviar</button>
+        <button type="submit" class="btn">Enviar</button>
       </form>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 NUBIK. Todos los derechos reservados.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
