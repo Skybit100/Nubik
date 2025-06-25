@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="NUBIK - Soluciones Tech para la Nueva Banca" />
-  <title>NUBIK – Innovación Financiera</title>
+  <title>NUBIK – Navegación por Secciones</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,28 +14,28 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#quienes-somos">Quiénes Somos</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#impacto">Impacto</a></li>
-        <li><a href="#contacto">Contáctanos</a></li>
+        <li><a href="#" data-section="inicio">Inicio</a></li>
+        <li><a href="#" data-section="quienes-somos">Quiénes Somos</a></li>
+        <li><a href="#" data-section="servicios">Servicios</a></li>
+        <li><a href="#" data-section="impacto">Impacto</a></li>
+        <li><a href="#" data-section="contacto">Contáctanos</a></li>
       </ul>
     </nav>
   </aside>
 
   <main class="main-content">
-    <section id="inicio" class="hero">
+    <section id="inicio" class="seccion visible hero">
       <h1>Impulsamos el Latido Digital de tu Banca</h1>
       <p>Donde la innovación y la seguridad se encuentran para crear experiencias inolvidables.</p>
-      <a href="#contacto" class="btn">¡Hablemos!</a>
+      <a href="#" data-section="contacto" class="btn">¡Hablemos!</a>
     </section>
 
-    <section id="quienes-somos">
+    <section id="quienes-somos" class="seccion">
       <h2>Quiénes Somos</h2>
       <p>En NUBIK ayudamos a bancos y fintechs a acelerar su transformación tecnológica con soluciones seguras, escalables y humanas.</p>
     </section>
 
-    <section id="servicios">
+    <section id="servicios" class="seccion">
       <h2>Servicios</h2>
       <div class="grid">
         <div class="card"><h3>⚙️ DevOps</h3><p>Automatización y despliegue multicloud.</p></div>
@@ -45,7 +45,7 @@
       </div>
     </section>
 
-    <section id="impacto">
+    <section id="impacto" class="seccion">
       <h2>Impacto</h2>
       <div class="kpis">
         <div><span>+120</span><p>apps desplegadas</p></div>
@@ -54,7 +54,7 @@
       </div>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" class="seccion">
       <h2>Contáctanos</h2>
       <form action="https://formspree.io/f/moqzvvke" method="POST">
         <input type="email" name="email" placeholder="Tu correo" required />
@@ -67,5 +67,6 @@
   <footer>
     <p>&copy; 2025 NUBIK. Todos los derechos reservados.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>

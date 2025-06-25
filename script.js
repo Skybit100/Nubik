@@ -1,19 +1,8 @@
-// Cambia fondo del header al hacer scroll
-const header = document.getElementById('header');
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 50) header.classList.replace('transparent','solid');
-  else header.classList.replace('solid','transparent');
-});
-
-// Observer para animar secciones al entrar en viewport
-const faders = document.querySelectorAll('.fade-in-section');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
+document.querySelectorAll('[data-section]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    const sectionId = link.getAttribute('data-section');
+    document.querySelectorAll('.seccion').forEach(sec => sec.classList.remove('visible'));
+    document.getElementById(sectionId).classList.add('visible');
   });
-}, { threshold: 0.2 });
-
-faders.forEach(fader => observer.observe(fader));
+});
