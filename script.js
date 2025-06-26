@@ -1,8 +1,11 @@
-document.querySelectorAll('[data-section]').forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    const sectionId = link.getAttribute('data-section');
-    document.querySelectorAll('.seccion').forEach(sec => sec.classList.remove('visible'));
-    document.getElementById(sectionId).classList.add('visible');
+function showSection(id) {
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(section => {
+    section.classList.remove('visible');
   });
-});
+  const target = document.getElementById(id);
+  if (target) {
+    target.classList.add('visible');
+    window.scrollTo(0, 0);
+  }
+}
