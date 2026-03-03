@@ -167,37 +167,50 @@
         <h2>Que se identifiquen rápido</h2>
         <p class="sub">Esto es lo que vemos todos los días en PyMES con TI “heredada”.</p>
 
+        <!-- NUEVAS CARDS (6) -->
         <div class="grid-3">
-          <div class="card">
-            <h3>Correo local frágil</h3>
-            <p>Exchange on-prem con parches, certificados, y superficie de ataque alta.</p>
+          <div class="card icon-card">
+            <img class="icon" src="assets/illus/exchange.svg" alt="Exchange on-prem">
+            <h3>Exchange on-prem</h3>
+            <p>Correo local, parches constantes y exposición pública.</p>
+            <span class="card-arrow">→ Exchange Online</span>
           </div>
 
-          <div class="card">
-            <h3>Identidad sin control</h3>
-            <p>AD físico, accesos amplios, sin MFA consistente, sin acceso condicional.</p>
+          <div class="card icon-card">
+            <img class="icon" src="assets/illus/entra.svg" alt="Active Directory">
+            <h3>Active Directory</h3>
+            <p>Controladores físicos, VPN dependiente, acceso débil.</p>
+            <span class="card-arrow">→ Entra ID (Identidad Cloud)</span>
           </div>
 
-          <div class="card">
-            <h3>Archivos sin gobierno</h3>
-            <p>File servers con permisos rotos, “carpetas históricas”, y backup incierto.</p>
+          <div class="card icon-card">
+            <img class="icon" src="assets/illus/sharepoint.svg" alt="File Server">
+            <h3>File Server</h3>
+            <p>Permisos caóticos, backups dudosos, sin trazabilidad.</p>
+            <span class="card-arrow">→ SharePoint / OneDrive</span>
           </div>
         </div>
 
         <div class="grid-3 mt">
-          <div class="card">
-            <h3>Backups sin restore real</h3>
-            <p>Respaldar no es recuperar. Sin pruebas, no existe continuidad.</p>
+          <div class="card icon-card">
+            <img class="icon" src="assets/illus/backup.svg" alt="Backups legacy">
+            <h3>Backups Legacy</h3>
+            <p>Sin pruebas reales de recuperación ni auditoría.</p>
+            <span class="card-arrow">→ Retención M365 + Versionado</span>
           </div>
 
-          <div class="card">
-            <h3>Seguridad perimetral vieja</h3>
-            <p>“Firewall y VPN” como estrategia. Hoy el estándar es Zero Trust.</p>
+          <div class="card icon-card">
+            <img class="icon" src="assets/illus/zerotrust.svg" alt="Seguridad perimetral">
+            <h3>Seguridad Perimetral</h3>
+            <p>Firewall + VPN como única barrera.</p>
+            <span class="card-arrow">→ Zero Trust + MFA</span>
           </div>
 
-          <div class="card">
-            <h3>CAPEX perpetuo</h3>
-            <p>Hardware, refacciones, licencias y horas hombre invisibles.</p>
+          <div class="card icon-card">
+            <img class="icon" src="assets/illus/azure.svg" alt="Infraestructura física">
+            <h3>Servidores Físicos</h3>
+            <p>Hardware obsoleto, CAPEX continuo y riesgo operativo.</p>
+            <span class="card-arrow">→ Azure IaaS / PaaS</span>
           </div>
         </div>
       </div>
