@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220">
+  <rect x="0" y="0" width="640" height="220" rx="22" fill="#081B39"/>
+  <rect x="24" y="26" width="190" height="168" rx="18" fill="#0B2448" stroke="#3E4258"/>
+  <rect x="225" y="26" width="190" height="168" rx="18" fill="#0B2448" stroke="#3E4258"/>
+  <rect x="426" y="26" width="190" height="168" rx="18" fill="#0B2448" stroke="#E92226"/>
+
+  <text x="44" y="64" fill="#fff" font-family="Inter, Arial" font-size="18" font-weight="800">Costo oculto</text>
+  <text x="245" y="64" fill="#fff" font-family="Inter, Arial" font-size="18" font-weight="800">Riesgo</text>
+  <text x="446" y="64" fill="#fff" font-family="Inter, Arial" font-size="18" font-weight="800">Beneficio</text>
+
+  <rect x="44" y="88" width="140" height="10" rx="5" fill="#E92226" opacity=".9"/>
+  <rect x="44" y="112" width="120" height="10" rx="5" fill="#fff" opacity=".65"/>
+  <rect x="44" y="136" width="150" height="10" rx="5" fill="#fff" opacity=".55"/>
+
+  <rect x="245" y="88" width="140" height="10" rx="5" fill="#E92226" opacity=".9"/>
+  <rect x="245" y="112" width="150" height="10" rx="5" fill="#fff" opacity=".65"/>
+  <rect x="245" y="136" width="110" height="10" rx="5" fill="#fff" opacity=".55"/>
+
+  <rect x="446" y="88" width="150" height="10" rx="5" fill="#fff" opacity=".75"/>
+  <rect x="446" y="112" width="140" height="10" rx="5" fill="#fff" opacity=".65"/>
+  <rect x="446" y="136" width="160" height="10" rx="5" fill="#E92226" opacity=".9"/>
+</svg>
