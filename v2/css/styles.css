@@ -291,3 +291,16 @@ h2{font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
   font-weight:600;
   color:#E92226;
 }
+.map-image-wrap{
+  width: min(560px, 100%);
+  border-radius: 22px;
+  overflow: hidden;
+  box-shadow: 0 22px 60px rgba(0,0,0,.35);
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(10,30,60,.55);
+}
+.map-image{
+  width: 100%;
+  height: auto;
+  display: block;
+}
