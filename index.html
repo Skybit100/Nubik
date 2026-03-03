@@ -1,355 +1,250 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Nubik | Modernización TI PyMES México</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" href="assets/nubik2.0.png" type="image/png">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <title>Nubik | Modernización TI para PyMES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Nubik ayuda a responsables de TI a modernizar, asegurar y operar con control en Azure + Microsoft 365 + Datadog." />
+  <link rel="icon" href="assets/nubik2.0.png" type="image/png" />
+  <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <header class="header">
-    <div class="header-container">
-      <img src="assets/nubik2.0.png" alt="Nubik" class="logo">
-      <nav>
-        <ul>
-          <li><a href="#metodologia">Metodología</a></li>
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#autoridad">Autoridad</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Nubik">
+        <img src="assets/nubik2.0.png" alt="Nubik" class="logo" />
+      </a>
+
+      <nav class="nav">
+        <a href="#metodologia">Metodología</a>
+        <a href="#contacto" class="nav-cta">Diagnóstico</a>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="top">
     <!-- HERO -->
-    <section class="hero fade-section" id="hero">
-      <div class="hero-content">
-        <h1>Tu infraestructura no necesita parches.<br>Necesita dirección.</h1>
-        <p class="hero-sub">
-          Nubik ayuda a responsables de TI a modernizar, asegurar y operar con visibilidad total en Azure + Microsoft 365 + Datadog.
-        </p>
-        <div class="hero-ctas">
-          <a href="#contacto" class="cta-primary">Agenda diagnóstico estratégico</a>
-          <button class="cta-secondary" id="cta-checklist">Checklist de madurez TI</button>
+    <section class="hero reveal">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="badge">Seguridad · Escalabilidad · Innovación</div>
+
+          <h1>Tu infraestructura no necesita parches.<br>Necesita dirección.</h1>
+
+          <p class="lead">
+            Nubik ayuda a responsables de TI a modernizar, asegurar y operar con control:
+            Azure + Microsoft 365 + Datadog.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contacto">Agenda diagnóstico estratégico</a>
+            <button class="btn btn-ghost" id="openChecklist" type="button">Checklist TI (30s)</button>
+          </div>
+
+          <div class="proof">
+            <span class="proof-chip">+10 años</span>
+            <span class="proof-chip">Financiero + privado</span>
+            <span class="proof-chip">Entornos críticos</span>
+          </div>
         </div>
-        <div class="hero-illustration">
-          <!-- SVG minimalista arquitectura cloud + dashboard -->
-          <svg width="320" height="185" viewBox="0 0 320 185" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect x="20" y="70" width="80" height="40" rx="16" fill="#081B39" stroke="#E92226" stroke-width="2"/>
-            <rect x="130" y="20" width="60" height="60" rx="16" fill="#081B39" stroke="#E92226" stroke-width="2"/>
-            <rect x="210" y="70" width="80" height="40" rx="16" fill="#081B39"/>
-            <rect x="80" y="140" width="160" height="30" rx="12" fill="#081B39" stroke="#3E4258" stroke-width="2"/>
-            <circle cx="160" cy="105" r="16" fill="#E92226"/>
-            <rect x="95" y="50" width="40" height="12" rx="6" fill="#E92226"/>
-            <rect x="185" y="130" width="40" height="9" rx="4" fill="#E92226"/>
-            <rect x="70" y="87" width="18" height="8" rx="4" fill="#fff"/>
-            <rect x="230" y="87" width="18" height="8" rx="4" fill="#fff"/>
-            <rect x="152" y="35" width="16" height="8" rx="4" fill="#fff"/>
-            <rect x="115" y="148" width="27" height="6" rx="3" fill="#fff"/>
-            <rect x="178" y="148" width="27" height="6" rx="3" fill="#fff"/>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Visual simple (no pesado) -->
+          <svg viewBox="0 0 520 360" xmlns="http://www.w3.org/2000/svg" role="img">
+            <defs>
+              <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#081B39"/>
+                <stop offset="1" stop-color="#0B2448"/>
+              </linearGradient>
+            </defs>
+
+            <rect x="20" y="20" width="480" height="320" rx="26" fill="url(#g)" stroke="#3E4258" opacity="0.95"/>
+            <rect x="55" y="70" width="180" height="90" rx="18" fill="#081B39" stroke="#E92226" stroke-width="2"/>
+            <rect x="285" y="70" width="180" height="90" rx="18" fill="#081B39" stroke="#3E4258"/>
+            <rect x="55" y="190" width="410" height="110" rx="18" fill="#081B39" stroke="#3E4258"/>
+
+            <circle cx="145" cy="115" r="18" fill="#E92226"/>
+            <rect x="110" y="140" width="70" height="10" rx="5" fill="#fff" opacity="0.9"/>
+
+            <rect x="310" y="95" width="130" height="10" rx="5" fill="#fff" opacity="0.75"/>
+            <rect x="310" y="120" width="90" height="10" rx="5" fill="#E92226" opacity="0.95"/>
+
+            <rect x="80" y="225" width="120" height="12" rx="6" fill="#E92226"/>
+            <rect x="80" y="252" width="220" height="10" rx="5" fill="#fff" opacity="0.75"/>
+            <rect x="80" y="275" width="180" height="10" rx="5" fill="#fff" opacity="0.6"/>
+            <rect x="320" y="235" width="120" height="12" rx="6" fill="#fff" opacity="0.75"/>
+            <rect x="320" y="262" width="120" height="10" rx="5" fill="#fff" opacity="0.55"/>
           </svg>
         </div>
-        <div class="pillars-group">
-          <span class="pillar">Seguridad</span>
-          <span class="pillar">Escalabilidad</span>
-          <span class="pillar">Innovación</span>
+      </div>
+    </section>
+
+    <!-- DOLOR (CORTO) -->
+    <section class="section reveal">
+      <div class="container">
+        <h2>Tu TI está pagando intereses de deuda técnica</h2>
+        <p class="sub">
+          Si tu realidad se parece a esto, estás operando con riesgo y sin control.
+        </p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Riesgo</h3>
+            <p>Respaldos no probados, ransomware, accesos sin gobierno.</p>
+          </div>
+          <div class="card">
+            <h3>Opacidad</h3>
+            <p>Incidentes sin trazabilidad, sin métricas, sin evidencia.</p>
+          </div>
+          <div class="card">
+            <h3>Reactividad</h3>
+            <p>Tickets eternos, parches, y cero estrategia para crecer.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- LA REALIDAD EN TI -->
-    <section class="section-light fade-section" id="realidad-ti">
-      <div class="section-container">
-        <h2 class="section-title">La realidad en TI</h2>
-        <ul class="reality-list">
-          <li><span class="red-dot"></span> Servidores legacy sin planeación de reemplazo</li>
-          <li><span class="red-dot"></span> Respaldos inconsistentes y no probados</li>
-          <li><span class="red-dot"></span> Incidentes sin evidencia ni trazabilidad</li>
-          <li><span class="red-dot"></span> Falta de visibilidad operativa y control de acceso</li>
-          <li><span class="red-dot"></span> Costos ocultos y recursos infrautilizados</li>
-          <li><span class="red-dot"></span> Auditorías complejas y sin documentación clara</li>
-          <li><span class="red-dot"></span> Shadow IT fuera de políticas</li>
-          <li><span class="red-dot"></span> Tickets interminables, sin solución estratégica</li>
-        </ul>
+    <!-- QUÉ HACEMOS (CONTUNDENTE) -->
+    <section class="section section-dark reveal">
+      <div class="container">
+        <h2>Lo llevamos a un modelo operable y medible</h2>
+        <p class="sub">
+          No somos soporte. Implementamos un sistema de operación: arquitectura + seguridad + observabilidad.
+        </p>
+
+        <div class="grid-3">
+          <div class="card dark">
+            <h3>Azure</h3>
+            <p>Modernización y migración con continuidad, no “big bang”.</p>
+          </div>
+          <div class="card dark">
+            <h3>Microsoft 365</h3>
+            <p>Identidad, dispositivos y políticas: control real y estándar.</p>
+          </div>
+          <div class="card dark">
+            <h3>Datadog</h3>
+            <p>Monitoreo útil: alertas accionables + runbooks para operar.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- QUÉ HACEMOS DIFERENTE -->
-    <section class="section-dark fade-section" id="diferente">
-      <div class="section-container">
-        <h2 class="section-title">Qué hacemos diferente</h2>
-        <div class="comparativo">
-          <div class="comparativo-columns">
+    <!-- METODOLOGÍA (SIN LISTAS LARGAS) -->
+    <section class="section reveal" id="metodologia">
+      <div class="container">
+        <h2>Metodología en 4 pasos</h2>
+        <p class="sub">Simple, controlada, entregable.</p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-n">1</div>
             <div>
-              <h3 class="comparativo-nubik">Nubik</h3>
-              <ul>
-                <li><strong>Estrategia y roadmap</strong></li>
-                <li><strong>Arquitectura y seguridad integral</strong></li>
-                <li><strong>Observabilidad real</strong></li>
-                <li><strong>Documentación entregable</strong></li>
-              </ul>
+              <h3>Diagnóstico</h3>
+              <p>Inventario + riesgos + quick wins + plan 30/60/90.</p>
             </div>
+          </div>
+          <div class="step">
+            <div class="step-n">2</div>
             <div>
-              <h3 class="comparativo-trad">Soporte tradicional</h3>
-              <ul>
-                <li>Reactivo</li>
-                <li>Parches temporales</li>
-                <li>Monitoreo superficial</li>
-                <li>Conocimiento tribal</li>
-              </ul>
+              <h3>Diseño</h3>
+              <p>Arquitectura objetivo: red, identidad, seguridad, continuidad.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">3</div>
+            <div>
+              <h3>Ejecución</h3>
+              <p>Migración/implementación con validación y control de cambios.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-n">4</div>
+            <div>
+              <h3>Operación</h3>
+              <p>Observabilidad + runbooks + mejora continua (sin ruido).</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- METODOLOGÍA EN 4 FASES -->
-    <section class="section-light fade-section" id="metodologia">
-      <div class="section-container">
-        <h2 class="section-title">Metodología Nubik en 4 fases</h2>
-        <div class="metodologia-steps">
-          <div class="step">
-            <span class="step-number">1</span>
-            <h4>Diagnóstico</h4>
-            <ul>
-              <li>Inventario técnico</li>
-              <li>Riesgos actuales</li>
-              <li>Quick wins identificados</li>
-              <li>Plan de 30/60/90 días</li>
-            </ul>
-          </div>
-          <div class="step">
-            <span class="step-number">2</span>
-            <h4>Diseño</h4>
-            <ul>
-              <li>Arquitectura objetivo</li>
-              <li>Seguridad y continuidad</li>
-              <li>Identidad y red</li>
-            </ul>
-          </div>
-          <div class="step">
-            <span class="step-number">3</span>
-            <h4>Ejecución</h4>
-            <ul>
-              <li>Migración Azure</li>
-              <li>Implementación M365</li>
-              <li>Hardening</li>
-            </ul>
-          </div>
-          <div class="step">
-            <span class="step-number">4</span>
-            <h4>Operación</h4>
-            <ul>
-              <li>Monitoreo Datadog</li>
-              <li>Runbooks y alertas</li>
-              <li>Mejora continua</li>
-            </ul>
-          </div>
-        </div>
-        <div class="pillars-group">
-          <span class="pillar">Seguridad</span>
-          <span class="pillar">Escalabilidad</span>
-          <span class="pillar">Innovación</span>
-        </div>
-      </div>
-    </section>
+    <!-- CONTACTO (CTA FINAL) -->
+    <section class="section section-dark reveal" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <h2>Agenda un diagnóstico estratégico</h2>
+          <p class="sub">
+            En 30 minutos te devolvemos: riesgos principales, quick wins y siguientes pasos.
+          </p>
 
-    <!-- SERVICIOS -->
-    <section class="section-dark fade-section" id="servicios">
-      <div class="section-container">
-        <h2 class="section-title">Servicios Nubik</h2>
-        <div class="services-grid">
-          <div class="service-card">
-            <h4>Migración a Azure</h4>
-            <p>Infraestructura operando en la nube, con validación y continuidad.</p>
-            <ul>
-              <li>Planeación de migración</li>
-              <li>Pruebas y validación final</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h4>Microsoft 365 Business Premium</h4>
-            <p>Identidad y dispositivos gestionados, políticas y seguridad aplicadas.</p>
-            <ul>
-              <li>Implementación profesional</li>
-              <li>Hardening de políticas</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h4>Seguridad perimetral + segmentación</h4>
-            <p>Redes controladas, segmentadas y posture security definida.</p>
-            <ul>
-              <li>Control de accesos</li>
-              <li>Segmentación efectiva</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h4>IAM</h4>
-            <p>Acceso por mínimos privilegios y gobierno centralizado.</p>
-            <ul>
-              <li>Políticas de acceso</li>
-              <li>Gobierno de identidades</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h4>Observabilidad con Datadog</h4>
-            <p>Alertas accionables y reducción de tiempo de detección/recuperación.</p>
-            <ul>
-              <li>Implementación Datadog</li>
-              <li>Runbooks operativos</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h4>Resiliencia ante ransomware</h4>
-            <p>Backups probados y estrategias de contención.</p>
-            <ul>
-              <li>Pruebas de recuperación</li>
-              <li>Contención y runbooks</li>
-            </ul>
-          </div>
-          <div class="service-card">
-            <h4>Gobierno de TI</h4>
-            <p>Operación documentada y políticas aplicadas.</p>
-            <ul>
-              <li>Políticas de operación</li>
-              <li>Documentación entregable</li>
-            </ul>
+          <div class="mini-proof">
+            <span>Entrega: diagnóstico + plan 30/60/90</span>
+            <span>Enfoque: seguridad, escalabilidad, innovación</span>
           </div>
         </div>
-        <div class="pillars-group">
-          <span class="pillar">Seguridad</span>
-          <span class="pillar">Escalabilidad</span>
-          <span class="pillar">Innovación</span>
-        </div>
-      </div>
-    </section>
 
-    <!-- AUTORIDAD -->
-    <section class="section-light fade-section" id="autoridad">
-      <div class="section-container">
-        <h2 class="section-title">Experiencia en entornos críticos</h2>
-        <div class="autoridad-block">
-          <p>+10 años en sector financiero y privado. Mentalidad de control de riesgo, continuidad y evidencia operativa.</p>
-          <div class="autoridad-liderazgo">
-            <h4>Fundador / Liderazgo</h4>
-            <ul>
-              <li>Experiencia operando infraestructura crítica, seguridad y redes cloud.</li>
-              <li>Enfoque en resultados y estándares.</li>
-            </ul>
-          </div>
-        </div>
-        <div class="pillars-group">
-          <span class="pillar">Seguridad</span>
-          <span class="pillar">Escalabilidad</span>
-          <span class="pillar">Innovación</span>
-        </div>
-      </div>
-    </section>
+        <form class="form" id="contactForm" autocomplete="off">
+          <label>Nombre
+            <input type="text" name="nombre" id="nombre" required>
+          </label>
+          <label>Empresa
+            <input type="text" name="empresa" id="empresa" required>
+          </label>
+          <label>Rol
+            <input type="text" name="rol" id="rol" required>
+          </label>
+          <label>Email
+            <input type="email" name="email" id="email" required>
+          </label>
+          <label>Teléfono
+            <input type="tel" name="telefono" id="telefono" required>
+          </label>
+          <label>Mensaje (opcional)
+            <textarea name="mensaje" id="mensaje" rows="3"></textarea>
+          </label>
 
-    <!-- CASO TIPO -->
-    <section class="section-dark fade-section" id="casotipo">
-      <div class="section-container">
-        <h2 class="section-title">Caso tipo: Antes / Después</h2>
-        <div class="casotipo-narrativa">
-          <div class="casotipo-before">
-            <h4>Antes</h4>
-            <p>
-              Infra on-prem frágil<br>
-              Visibilidad limitada<br>
-              Riesgo real ante ransomware<br>
-              Microsoft 365 subutilizado
-            </p>
-          </div>
-          <div class="casotipo-after">
-            <h4>Después</h4>
-            <p>
-              Azure + M365 bien implementado<br>
-              Postura de seguridad robusta<br>
-              Monitoreo avanzado<br>
-              Runbooks de operación controlada
-            </p>
-          </div>
-        </div>
-        <div class="pillars-group">
-          <span class="pillar">Seguridad</span>
-          <span class="pillar">Escalabilidad</span>
-          <span class="pillar">Innovación</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA FINAL + CHECKLIST + CONTACTO -->
-    <section class="section-light fade-section" id="checklist-madurez">
-      <div class="section-container">
-        <h2 class="section-title">Checklist de madurez TI</h2>
-        <ul class="checklist-list" id="checklist-content">
-          <li>Inventario actualizado de activos</li>
-          <li>Respaldos probados y documentados</li>
-          <li>Control de acceso por roles</li>
-          <li>Políticas de seguridad aplicadas</li>
-          <li>Identidad gestionada (Azure / M365)</li>
-          <li>Monitoreo y alertas accionables</li>
-          <li>Segmentación de red vigente</li>
-          <li>Runbooks para incidentes</li>
-        </ul>
-        <button class="cta-secondary" id="copy-checklist">Copiar Checklist</button>
-      </div>
-    </section>
-    <section class="section-dark fade-section" id="contacto">
-      <div class="section-container">
-        <h2 class="section-title">Eleva tu área de TI al nivel que tu empresa necesita.</h2>
-        <form class="contact-form" id="contactForm" autocomplete="off">
-          <div class="form-row">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required>
-          </div>
-          <div class="form-row">
-            <label for="empresa">Empresa</label>
-            <input type="text" id="empresa" name="empresa" required>
-          </div>
-          <div class="form-row">
-            <label for="rol">Rol</label>
-            <input type="text" id="rol" name="rol" required>
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-row">
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" required>
-          </div>
-          <div class="form-row">
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" name="mensaje" rows="3"></textarea>
-          </div>
-          <button type="submit" class="cta-primary">Enviar diagnóstico</button>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+          <p class="form-note">Esto abre tu correo (sin backend).</p>
         </form>
-        <div class="contact-alt">
-          <!--
-          Alternativa backend:
-          <form action="https://formspree.io/f/[id]" method="POST" ...>
-          o Google Forms embed...
-          -->
-        </div>
-        <div class="pillars-group">
-          <span class="pillar">Seguridad</span>
-          <span class="pillar">Escalabilidad</span>
-          <span class="pillar">Innovación</span>
-        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-container">
-      <span class="footer-pillars">Seguridad. Escalabilidad. Innovación.</span>
-      <img src="assets/nubik2.0.png" alt="Nubik" class="logo-small">
+    <div class="container footer-row">
+      <div class="footer-left">
+        <img src="assets/nubik2.0.png" alt="Nubik" class="logo-sm">
+        <span>Seguridad. Escalabilidad. Innovación.</span>
+      </div>
+      <a class="footer-link" href="#top">↑</a>
     </div>
   </footer>
+
+  <!-- MODAL CHECKLIST -->
+  <dialog class="modal" id="checklistModal">
+    <div class="modal-head">
+      <strong>Checklist TI (rápido)</strong>
+      <button class="x" id="closeChecklist" aria-label="Cerrar">×</button>
+    </div>
+
+    <ul class="checklist" id="checklistContent">
+      <li>Inventario actualizado de activos</li>
+      <li>Backups probados (restore real)</li>
+      <li>MFA + acceso por roles</li>
+      <li>Políticas M365 aplicadas</li>
+      <li>Segmentación de red mínima</li>
+      <li>Monitoreo con alertas accionables</li>
+      <li>Runbook para incidentes</li>
+    </ul>
+
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="copyChecklist" type="button">Copiar</button>
+      <button class="btn btn-primary" id="goContact" type="button">Agendar diagnóstico</button>
+    </div>
+  </dialog>
+
   <script src="script.js"></script>
 </body>
 </html>
