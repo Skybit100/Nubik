@@ -274,3 +274,20 @@ h2{font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
   .contact-grid{grid-template-columns:1fr}
   .nav{gap:12px}
 }
+.icon-card{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.icon{
+  width:54px;
+  height:54px;
+}
+
+.card-arrow{
+  margin-top:6px;
+  font-size:13px;
+  font-weight:600;
+  color:#E92226;
+}
