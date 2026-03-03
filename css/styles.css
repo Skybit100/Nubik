@@ -25,11 +25,11 @@ body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:
 
 /* LOGO: más grande y legible */
 .logo{
-  height:80px; width:auto;
+  height:95px; width:auto;
   display:block;
 }
 @media (max-width:900px){
-  .logo{height:80px}
+  .logo{height:95px}
 }
 
 .nav{display:flex;align-items:center;gap:18px}
