@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nubik | Migra de On-Prem a Microsoft Cloud</title>
+  <meta name="description" content="Migramos Exchange, Active Directory, file servers y servidores físicos a Microsoft Cloud (M365 + Entra ID + Azure). Riesgo y costo actual vs beneficios." />
+
+  <link rel="icon" href="assets/nubik2.0.png" type="image/png" />
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header-row">
+      <a class="brand" href="#top" aria-label="Nubik">
+        <img src="assets/nubik2.0.png" alt="Nubik" class="logo" />
+      </a>
+
+      <nav class="nav">
+        <a href="#transformacion">Transformación</a>
+        <a href="#riesgo">Riesgo vs Beneficio</a>
+        <a href="#contacto" class="nav-cta">Diagnóstico</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero reveal">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="badge">Migración Microsoft Cloud · Seguridad · Gobierno</div>
+
+          <h1>De servidores obsoletos<br>a Microsoft Cloud, sin caos.</h1>
+
+          <p class="lead">
+            Si hoy operas con Exchange on-prem, Active Directory físico, file servers y backups legacy,
+            estás comprando riesgo con cada mes que pasa.
+            Nubik migra tu operación a Microsoft 365 + Entra ID + Azure con un plan controlado y evidencia.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contacto">Agenda diagnóstico (30 min)</a>
+            <button class="btn btn-ghost" id="openChecklist" type="button">Checklist (30s)</button>
+          </div>
+
+          <div class="chips">
+            <span class="chip">Exchange → Exchange Online</span>
+            <span class="chip">AD → Entra ID</span>
+            <span class="chip">File Server → SharePoint/OneDrive</span>
+            <span class="chip">Infra física → Azure IaaS/PaaS</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="map-card">
+            <div class="map-title">Mapa de migración</div>
+
+            <div class="map-grid">
+              <div class="map-col">
+                <div class="map-h">Legacy</div>
+
+                <div class="map-item">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">Exchange on-prem</div>
+                    <div class="map-v">Correo local, parches, exposición</div>
+                  </div>
+                </div>
+
+                <div class="map-item">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">Active Directory</div>
+                    <div class="map-v">Controladores, VPN, acceso débil</div>
+                  </div>
+                </div>
+
+                <div class="map-item">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">File Server</div>
+                    <div class="map-v">Permisos caóticos, backups dudosos</div>
+                  </div>
+                </div>
+
+                <div class="map-item">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">Backups legacy</div>
+                    <div class="map-v">Sin pruebas reales de restore</div>
+                  </div>
+                </div>
+
+                <div class="map-item">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">Servidores físicos</div>
+                    <div class="map-v">Hardware obsoleto, CAPEX continuo</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="map-arrow" aria-hidden="true">→</div>
+
+              <div class="map-col">
+                <div class="map-h">Microsoft Cloud</div>
+
+                <div class="map-item good">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">Exchange Online</div>
+                    <div class="map-v">Protección, cumplimiento, continuidad</div>
+                  </div>
+                </div>
+
+                <div class="map-item good">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">Entra ID</div>
+                    <div class="map-v">MFA, acceso condicional, Zero Trust</div>
+                  </div>
+                </div>
+
+                <div class="map-item good">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">SharePoint / OneDrive</div>
+                    <div class="map-v">Versionado, DLP, colaboración</div>
+                  </div>
+                </div>
+
+                <div class="map-item good">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">M365 Retención</div>
+                    <div class="map-v">Políticas + auditoría + eDiscovery</div>
+                  </div>
+                </div>
+
+                <div class="map-item good">
+                  <div class="dot"></div>
+                  <div>
+                    <div class="map-k">Azure IaaS/PaaS</div>
+                    <div class="map-v">Escala, HA, costos controlables</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-foot">
+              Entregable: inventario + riesgos + plan 30/60/90 + roadmap de migración.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- IDENTIFICACIÓN (DOLOR) -->
+    <section class="section reveal" id="transformacion">
+      <div class="container">
+        <h2>Que se identifiquen rápido</h2>
+        <p class="sub">Esto es lo que vemos todos los días en PyMES con TI “heredada”.</p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Correo local frágil</h3>
+            <p>Exchange on-prem con parches, certificados, y superficie de ataque alta.</p>
+          </div>
+
+          <div class="card">
+            <h3>Identidad sin control</h3>
+            <p>AD físico, accesos amplios, sin MFA consistente, sin acceso condicional.</p>
+          </div>
+
+          <div class="card">
+            <h3>Archivos sin gobierno</h3>
+            <p>File servers con permisos rotos, “carpetas históricas”, y backup incierto.</p>
+          </div>
+        </div>
+
+        <div class="grid-3 mt">
+          <div class="card">
+            <h3>Backups sin restore real</h3>
+            <p>Respaldar no es recuperar. Sin pruebas, no existe continuidad.</p>
+          </div>
+
+          <div class="card">
+            <h3>Seguridad perimetral vieja</h3>
+            <p>“Firewall y VPN” como estrategia. Hoy el estándar es Zero Trust.</p>
+          </div>
+
+          <div class="card">
+            <h3>CAPEX perpetuo</h3>
+            <p>Hardware, refacciones, licencias y horas hombre invisibles.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METODOLOGÍA (CORTA, CONCRETA) -->
+    <section class="section dark reveal">
+      <div class="container">
+        <h2>Cómo los migramos sin romper producción</h2>
+        <p class="sub">Control de cambios, ventanas, validación y evidencia.</p>
+
+        <div class="steps">
+          <div class="step">
+            <span class="n">1</span>
+            <div>
+              <h3>Diagnóstico</h3>
+              <p>Inventario de AD, correo, servidores, archivos, DNS, licencias y riesgos reales.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="n">2</span>
+            <div>
+              <h3>Diseño</h3>
+              <p>Arquitectura objetivo: Entra ID, Zero Trust, M365, retención y Azure según carga.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="n">3</span>
+            <div>
+              <h3>Ejecución</h3>
+              <p>Migración controlada: Exchange, identidad, archivos y/o servidores. Validación por etapas.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <span class="n">4</span>
+            <div>
+              <h3>Operación</h3>
+              <p>Gobierno continuo: políticas M365, auditoría, runbooks y monitoreo útil.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RIESGO VS COSTO VS BENEFICIO -->
+    <section class="section reveal" id="riesgo">
+      <div class="container">
+        <h2>Riesgo y costo bajo vs beneficio</h2>
+        <p class="sub">El punto no es “migrar por moda”. Es reducir riesgo y costo oculto con beneficios evidentes.</p>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Costo oculto (Legacy)</h3>
+            <ul class="bullets">
+              <li>Horas correctivas + parches</li>
+              <li>Hardware / refacciones</li>
+              <li>Downtime silencioso</li>
+              <li>Riesgo ransomware</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Riesgo operativo</h3>
+            <ul class="bullets">
+              <li>Backups sin restore</li>
+              <li>Accesos sin gobierno</li>
+              <li>VPN como dependencia</li>
+              <li>Auditoría sin evidencia</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <h3>Beneficio (Microsoft Cloud)</h3>
+            <ul class="bullets">
+              <li>MFA + acceso condicional</li>
+              <li>Retención y eDiscovery</li>
+              <li>Colaboración real</li>
+              <li>Escala y continuidad</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="risk-note">
+          Resultado esperado: menos superficie de ataque, menos “trabajo invisible”, más control y evidencia.
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section dark reveal" id="contacto">
+      <div class="container contact-grid">
+        <div>
+          <h2>Agenda diagnóstico de migración</h2>
+          <p class="sub">
+            30 minutos. Te devolvemos: inventario mínimo, riesgos principales, quick wins y el plan 30/60/90.
+          </p>
+
+          <div class="mini-proof">
+            <span>Enfoque: Exchange · Entra ID · M365 · Azure</span>
+            <span>Modelo: Zero Trust + gobierno + retención</span>
+          </div>
+        </div>
+
+        <form class="form" id="contactForm" autocomplete="off">
+          <label>Nombre<input id="nombre" required></label>
+          <label>Empresa<input id="empresa" required></label>
+          <label>Rol<input id="rol" required></label>
+          <label>Email<input id="email" type="email" required></label>
+          <label>Teléfono<input id="telefono" type="tel" required></label>
+          <label>Mensaje (opcional)<textarea id="mensaje" rows="3"></textarea></label>
+
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <p class="note">Esto abre tu correo (sin backend).</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <div class="footer-left">
+        <img src="assets/nubik2.0.png" class="logo-sm" alt="Nubik">
+        <span>Microsoft Cloud Migration · Zero Trust · Gobierno</span>
+      </div>
+      <a href="#top" class="top">↑</a>
+    </div>
+  </footer>
+
+  <!-- MODAL CHECKLIST -->
+  <dialog class="modal" id="checklistModal">
+    <div class="modal-head">
+      <strong>Checklist (rápido)</strong>
+      <button class="x" id="closeChecklist" aria-label="Cerrar">×</button>
+    </div>
+
+    <ul class="checklist" id="checklistContent">
+      <li>¿Tienes Exchange on-prem o correo local?</li>
+      <li>¿Tu AD depende de 1–2 controladores sin HA?</li>
+      <li>¿Tu file server es “histórico” y sin gobierno?</li>
+      <li>¿Tus backups tienen restore probado?</li>
+      <li>¿Tienes MFA y acceso condicional en toda la org?</li>
+      <li>¿Tienes retención/auditoría (M365) implementada?</li>
+      <li>¿Tienes plan real de migración (30/60/90)?</li>
+    </ul>
+
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="copyChecklist" type="button">Copiar</button>
+      <button class="btn btn-primary" id="goContact" type="button">Agendar</button>
+    </div>
+  </dialog>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
