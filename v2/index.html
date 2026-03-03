@@ -228,17 +228,56 @@
           </div>
         </div>
 
-        <form class="form" id="contactForm" autocomplete="off">
-          <label>Nombre<input id="nombre" required></label>
-          <label>Empresa<input id="empresa" required></label>
-          <label>Rol<input id="rol" required></label>
-          <label>Email<input id="email" type="email" required></label>
-          <label>Teléfono<input id="telefono" type="tel" required></label>
-          <label>Mensaje (opcional)<textarea id="mensaje" rows="3"></textarea></label>
+        <form
+  class="form"
+  action="https://formspree.io/f/mpqjvqrv"
+  method="POST"
+  autocomplete="off"
+>
 
-          <button class="btn btn-primary" type="submit">Enviar</button>
-          <p class="note">Esto abre tu correo (sin backend).</p>
-        </form>
+  <label>
+    Nombre
+    <input type="text" name="nombre" required>
+  </label>
+
+  <label>
+    Empresa
+    <input type="text" name="empresa" required>
+  </label>
+
+  <label>
+    Rol
+    <input type="text" name="rol" required>
+  </label>
+
+  <label>
+    Email
+    <input type="email" name="email" required>
+  </label>
+
+  <label>
+    Teléfono
+    <input type="tel" name="telefono" required>
+  </label>
+
+  <label>
+    Mensaje (opcional)
+    <textarea name="mensaje" rows="3"></textarea>
+  </label>
+
+  <!-- asunto del correo -->
+  <input type="hidden" name="_subject" value="Nuevo diagnóstico Nubik">
+
+  <!-- antispam -->
+  <input type="text" name="_gotcha" style="display:none">
+
+  <button class="btn btn-primary" type="submit">
+    Enviar
+  </button>
+
+  <p class="note">Te responderemos por correo.</p>
+
+</form>
       </div>
     </section>
   </main>
