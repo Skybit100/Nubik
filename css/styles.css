@@ -304,3 +304,43 @@ h2{font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
   height: auto;
   display: block;
 }
+.footer {
+  background: #071c36;
+  color: white;
+  padding: 50px 20px;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.footer-logo {
+  height: 36px;
+  margin-bottom: 15px;
+}
+
+.footer-tagline {
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 20px;
+}
+
+.footer-contact p {
+  margin: 4px 0;
+}
+
+.footer-contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #ff4b4b;
+}
+
+.footer-copy {
+  margin-top: 25px;
+  font-size: 13px;
+  color: rgba(255,255,255,0.5);
+}
