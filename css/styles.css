@@ -306,41 +306,59 @@ h2{font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
 }
 .footer {
   background: #071c36;
-  color: white;
-  padding: 50px 20px;
+  color: #fff;
+  padding: 32px 20px;
+  position: relative;
 }
 
-.footer-content {
-  max-width: 900px;
-  margin: auto;
+.footer-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-center {
   text-align: center;
 }
 
-.footer-logo {
-  height: 36px;
-  margin-bottom: 15px;
+.logo-sm {
+  height: 34px;
+  margin-bottom: 12px;
 }
 
 .footer-tagline {
+  margin: 0 0 14px 0;
   color: rgba(255,255,255,0.75);
-  margin-bottom: 20px;
+  font-size: 14px;
 }
 
-.footer-contact p {
+.footer-center p {
   margin: 4px 0;
+  font-size: 14px;
+  color: rgba(255,255,255,0.88);
 }
 
-.footer-contact a {
-  color: white;
+.footer-center a {
+  color: #fff;
   text-decoration: none;
 }
 
-.footer-contact a:hover {
+.footer-center a:hover {
   color: #ff4b4b;
 }
 
-.footer-copy {
-  margin-top: 25px;
-  font-size: 13px;
-  color: rgba(255,255,255,0.5);
+.top {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+.top:hover {
+  opacity: 1;
 }
