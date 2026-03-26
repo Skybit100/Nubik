@@ -1,0 +1,32 @@
+{
+  "images": [
+    {
+      "id": "hero_background",
+      "path": "/assets/web/optimized/nubik_hero_bg.png"
+    },
+    {
+      "id": "m365_icon",
+      "path": "/assets/web/optimized/nubik_m365_icon.png"
+    },
+    {
+      "id": "azure_icon",
+      "path": "/assets/web/optimized/nubik_azure_icon.png"
+    },
+    {
+      "id": "zero_trust_icon",
+      "path": "/assets/web/optimized/nubik_zero_trust_icon.png"
+    },
+    {
+      "id": "azure_migration_map",
+      "path": "/assets/web/optimized/nubik_migration_map.png"
+    },
+    {
+      "id": "azure_arc_icon",
+      "path": "/assets/web/optimized/nubik_arc_icon.png"
+    }
+  ],
+  "style": {
+    "aesthetic": "Industrial / Dark Mode",
+    "accents": "Subtle Neon Teal and Cyan"
+  }
+}

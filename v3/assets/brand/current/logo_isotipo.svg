@@ -1,0 +1,7 @@
+<svg width="420" height="420" viewBox="0 0 420 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle -->
+  <circle cx="210" cy="210" r="210" fill="#E31E24"/>
+  
+  <!-- "N" Isotype -->
+  <path d="M104.5 111.5V308.5H156.5V213.5L263.5 308.5H315.5V111.5H263.5V206.5L156.5 111.5H104.5Z" fill="white"/>
+</svg>

@@ -1,0 +1,18 @@
+{
+  "hero_background": {
+    "service": "General / Hero",
+    "visual_description": "Industrial server room with glowing teal and blue subtle neon accents, wide shot, deep depth of field. High-end photography style, representing solid foundational infrastructure without clutter."
+  },
+  "m365_icon": {
+    "service": "Modernización M365",
+    "visual_description": "Clean geometrical representation of a unified digital workspace paradigm. A central nexus with connecting nodes, subtle teal illumination on a dark gray matrix."
+  },
+  "azure_icon": {
+    "service": "Infraestructura Azure",
+    "visual_description": "Abstract active-active cloud architecture diagram. Twin glowing cyan nodes synchronizing data flows over a dark navy background, representing multi-region redundancy."
+  },
+  "zero_trust_icon": {
+    "service": "Seguridad Zero Trust",
+    "visual_description": "Conceptual microsegmentation shield. Encapsulated network nodes with strict boundary outlines and glowing neon blue locking mechanisms. Highly technical and pristine."
+  }
+}
